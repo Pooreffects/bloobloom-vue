@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Tinos:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+select {
+  appearance: none;
+  --webkit-appearance: none;
+  --moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
