@@ -31,7 +31,7 @@
     </div>
     <div class="glasses-grid">
       <div
-        class="w-full h-72 flex flex-col items-center border-[1px] border-black"
+        class="w-full h-full flex flex-col items-center"
         v-for="pair in spectaclesWomen.glasses"
         :key="pair.id"
       >
@@ -60,7 +60,9 @@ spectaclesWomen.fetchGlasses();
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-items: center;
+  background-color: black;
   border: 1px solid black;
+  gap: 1px;
   padding: 0;
   margin: 0;
   width: 100%;
