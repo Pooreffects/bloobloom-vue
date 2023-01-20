@@ -2,30 +2,34 @@
   <main class="w-full h-full">
     <div class="flex items-center justify-center h-14">
       <div class="w-full h-full flex items-center justify-end">
-        <h2 class="text-4xl font-style font-semibold uppercase pr-10">
+        <h2
+          class="sm:pl-2 text-xl md:text-4xl lg:text-4xl xl:text-4xl font-style font-semibold uppercase pr-10"
+        >
           Spectacles Women
         </h2>
       </div>
       <div class="w-1/2 h-full flex items-center justify-start">
         <select
+          name="colour"
           class="h-full border-x-[1px] border-black text-center font-style font-medium uppercase xl:text-lg focus:outline-none hover:cursor-pointer hover:translate-y-[2.5px] transition-all duration-75 ease-in-out"
         >
-          <option selected>Colour</option>
-          <option>Black</option>
-          <option>Tortoise</option>
-          <option>Coloured</option>
-          <option>Crystal</option>
-          <option>Dark</option>
-          <option>Bright</option>
+          <option value="">Colour</option>
+          <option value="black">Black</option>
+          <option value="tortoise">Tortoise</option>
+          <option value="coloured">Coloured</option>
+          <option value="crystal">Crystal</option>
+          <option value="dark">Dark</option>
+          <option value="bright">Bright</option>
         </select>
         <select
+          name="shape"
           class="h-full border-r-[1px] border-black text-center font-style font-medium uppercase xl:text-lg focus:outline-none hover:cursor-pointer hover:translate-y-[2.5px] transition-all duration-75 ease-in-out"
         >
-          <option selected>Shape</option>
-          <option>Square</option>
-          <option>Rectangle</option>
-          <option>Round</option>
-          <option>Cat-eye</option>
+          <option value="">Shape</option>
+          <option value="square">Square</option>
+          <option value="rectangle">Rectangle</option>
+          <option value="round">Round</option>
+          <option value="cat-eye">Cat-eye</option>
         </select>
       </div>
     </div>
@@ -53,11 +57,11 @@
 import { useSpectaclesWomenStore } from '../stores/SpectaclesWomenStore';
 import Loader from './Loader.vue';
 
+/* Filter incoming data */
 const spectaclesWomen = useSpectaclesWomenStore();
-spectaclesWomen.fetchGlasses();
+spectaclesWomen.fetchAllGlasses();
 
 /* Filters */
-
 </script>
 
 <style scoped>
@@ -72,5 +76,20 @@ spectaclesWomen.fetchGlasses();
   margin: 0;
   width: 100%;
   height: 100%;
+}
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+.no-scroll::-moz-scrollbar {
+  display: none;
+}
+.no-scroll::-o-scrollbar {
+  display: none;
+}
+.no-scroll::-google-ms-scrollbar {
+  display: none;
+}
+.no-scroll::-khtml-scrollbar {
+  display: none;
 }
 </style>

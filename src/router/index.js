@@ -9,6 +9,10 @@ const router = createRouter({
       component: Glasses,
     },
     {
+      path: '/',
+      component: Glasses,
+    },
+    {
       path: '/:pathMatch(.*)*',
       component: () => import('../views/PageNotFound.vue'),
     },
