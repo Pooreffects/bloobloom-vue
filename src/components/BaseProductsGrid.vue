@@ -29,6 +29,7 @@
         </select>
       </div>
     </div>
+    <Loader v-if="spectaclesWomen.loading" />
     <div class="glasses-grid">
       <div
         class="w-full h-full flex flex-col items-center"
@@ -50,9 +51,13 @@
 
 <script setup>
 import { useSpectaclesWomenStore } from '../stores/SpectaclesWomenStore';
+import Loader from './Loader.vue';
 
 const spectaclesWomen = useSpectaclesWomenStore();
 spectaclesWomen.fetchGlasses();
+
+/* Filters */
+
 </script>
 
 <style scoped>

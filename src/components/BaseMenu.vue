@@ -8,7 +8,7 @@
     >
       <div class="p-0 m-0 flex flex-col">
         <div
-          class="py-4 px-4 border-b-[1px] border-b-black flex items-center justify-between"
+          class="py-5 px-4 border-b-[1px] border-b-black flex items-center justify-between"
         >
           <a
             href=""
@@ -22,7 +22,7 @@
           />
         </div>
         <div
-          class="py-4 px-4 border-b-[1px] border-b-black flex items-center justify-between"
+          class="py-5 px-4 border-b-[1px] border-b-black flex items-center justify-between"
         >
           <a
             href=""
@@ -35,14 +35,14 @@
             icon="fa-solid fa-caret-right"
           />
         </div>
-        <div class="py-4 pl-4 border-b-[1px] border-b-black">
+        <div class="py-5 pl-4 border-b-[1px] border-b-black">
           <p
             class="font-style font-medium text-lg uppercase hover:line-through hover:cursor-pointer hover:text-gray-600"
           >
             Home Try On
           </p>
         </div>
-        <div class="py-4 pl-4 border-b-[1px] border-b-black">
+        <div class="py-5 pl-4 border-b-[1px] border-b-black">
           <p
             class="font-style font-medium text-lg uppercase hover:line-through hover:cursor-pointer hover:text-gray-600"
           >
@@ -58,7 +58,10 @@
 import { Transition } from 'vue';
 
 const props = defineProps({
-  menu: Boolean,
+  menu: {
+    hover: Boolean,
+    open: Boolean,
+  },
 });
 </script>
 

@@ -11,7 +11,7 @@
     </a>
 
     <a
-      class="pr-6 hover:translate-y-[2px] hover:shadow-xs transition-all duration-75 ease-in-out"
+      class="pr-6 hover:-translate-y-[2px] hover:shadow-xs transition-all duration-100 ease-out"
       href="/"
     >
       <img src="../assets/bloobloom.png" alt="Logo" />
