@@ -8,7 +8,7 @@
       </div>
       <div class="w-1/2 h-full flex items-center justify-start">
         <select
-          class="h-full border-x-[1px] border-black text-center font-style font-medium uppercase text-lg xl:text-xl focus:outline-none hover:cursor-pointer"
+          class="h-full border-x-[1px] border-black text-center font-style font-medium uppercase xl:text-lg focus:outline-none hover:cursor-pointer hover:translate-y-[2.5px] transition-all duration-75 ease-in-out"
         >
           <option selected>Colour</option>
           <option>Black</option>
@@ -19,7 +19,7 @@
           <option>Bright</option>
         </select>
         <select
-          class="h-full border-r-[1px] border-black text-center font-style font-medium uppercase text-lg xl:text-xl focus:outline-none hover:cursor-pointer"
+          class="h-full border-r-[1px] border-black text-center font-style font-medium uppercase xl:text-lg focus:outline-none hover:cursor-pointer hover:translate-y-[2.5px] transition-all duration-75 ease-in-out"
         >
           <option selected>Shape</option>
           <option>Square</option>
